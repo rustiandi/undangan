@@ -1,0 +1,256 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.color-theme-1{
+	color: var(--r1-theme-color);
+}
+
+.color-theme-2{
+	color: var(--r2-theme-color);
+}
+
+.color-theme-3{
+	color: var(--r3-theme-color);
+}
+.bg-theme-1{
+	background-color: var(--r1-theme-color);
+}
+
+.bg-theme-2{
+	background-color: var(--r2-theme-color);
+}
+
+.bg-theme-3{
+	background-color: var(--r3-theme-color);
+}
+
+hr.line-theme-1 {
+	height:7px;
+	background-color: transparent;
+	border-top:2px solid var(--r1-theme-color);
+	border-bottom:3px solid var(--r1-theme-color);
+}
+
+hr.line-theme-2 {
+	height:5px;
+	border-top:1px solid var(--r1-theme-color);
+	border-bottom:2px solid var(--r1-theme-color);
+}
+
+hr.line-xs {
+  	width: 25%;
+}
+
+hr.line-m {
+	width: 50%;
+}
+
+hr.line-lg {
+	width: 70%;
+}
+.btn-theme-1 {
+  color: var(--r1-text--buttons-color);
+  background-color: var(--r1-theme-color);
+  border-color: var(--r1-theme-color);
+}
+.btn-theme-1:hover {
+  color: var(--r1-text--buttons-color);
+  background-color: var(--r1-theme-color-tint);
+  border-color: var(--r1-theme-color-shade);
+}
+.btn-check:focus + .btn-theme-1, .btn-theme-1:focus {
+  color: var(--r1-text--buttons-color);
+  background-color: var(--r1-theme-color-tint);
+  border-color: var(--r1-theme-color-shade);
+  box-shadow: 0 0 0 0.25rem rgba(var(--r1-theme-color-rgb), 0.5);
+}
+.btn-check:checked + .btn-theme-1, .btn-check:active + .btn-theme-1, .btn-theme-1:active, .btn-theme-1.active, .show > .btn-theme-1.dropdown-toggle {
+  color: var(--r1-text--buttons-color);
+  background-color: var(--r1-theme-color-shade);
+  border-color: var(--r1-theme-color-shade);
+}
+.btn-check:checked + .btn-theme-1:focus, .btn-check:active + .btn-theme-1:focus, .btn-theme-1:active:focus, .btn-theme-1.active:focus, .show > .btn-theme-1.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--r1-theme-color-rgb), 0.5);
+}
+.btn-theme-1:disabled, .btn-theme-1.disabled {
+  color: var(--r1-text--buttons-color);
+  background-color: var(--r1-theme-color);
+  border-color: var(--r1-theme-color);
+}
+.btn-outline-theme-1 {
+  color: var(--r1-theme-color);
+  border-color: var(--r1-theme-color);
+}
+.btn-outline-theme-1:hover {
+  color: var(--r1-text--buttons-color);
+  background-color: var(--r1-theme-color);
+  border-color: var(--r1-theme-color);
+}
+.btn-check:focus + .btn-outline-theme-1, .btn-outline-theme-1:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--r1-theme-color-rgb), 0.5);
+}
+.btn-check:checked + .btn-outline-theme-1, .btn-check:active + .btn-outline-theme-1, .btn-outline-theme-1:active, .btn-outline-theme-1.active, .btn-outline-theme-1.dropdown-toggle.show {
+  color: var(--r1-text--buttons-color);
+  background-color: var(--r1-theme-color);
+  border-color: var(--r1-theme-color);
+}
+.btn-check:checked + .btn-outline-theme-1:focus, .btn-check:active + .btn-outline-theme-1:focus, .btn-outline-theme-1:active:focus, .btn-outline-theme-1.active:focus, .btn-outline-theme-1.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--r1-theme-color-rgb), 0.5);
+}
+.btn-outline-theme-1:disabled, .btn-outline-theme-1.disabled {
+  color: var(--r1-theme-color);
+  background-color: transparent;
+}
+.btn-theme-2 {
+  color: var(--r2-text--buttons-color);
+  background-color: var(--r2-theme-color);
+  border-color: var(--r2-theme-color);
+}
+.btn-theme-2:hover {
+  color: var(--r2-text--buttons-color);
+  background-color: var(--r2-theme-color-tint);
+  border-color: var(--r2-theme-color-shade);
+}
+.btn-check:focus + .btn-theme-2, .btn-theme-2:focus {
+  color: var(--r2-text--buttons-color);
+  background-color: var(--r2-theme-color-tint);
+  border-color: var(--r2-theme-color-shade);
+  box-shadow: 0 0 0 0.25rem rgba(var(--r2-theme-color-rgb), 0.5);
+}
+.btn-check:checked + .btn-theme-2, .btn-check:active + .btn-theme-2, .btn-theme-2:active, .btn-theme-2.active, .show > .btn-theme-2.dropdown-toggle {
+  color: var(--r2-text--buttons-color);
+  background-color: var(--r2-theme-color-shade);
+  border-color: var(--r2-theme-color-shade);
+}
+.btn-check:checked + .btn-theme-2:focus, .btn-check:active + .btn-theme-2:focus, .btn-theme-2:active:focus, .btn-theme-2.active:focus, .show > .btn-theme-2.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--r2-theme-color-rgb), 0.5);
+}
+.btn-theme-2:disabled, .btn-theme-2.disabled {
+  color: var(--r2-text--buttons-color);
+  background-color: var(--r2-theme-color);
+  border-color: var(--r2-theme-color);
+}
+.btn-outline-theme-2 {
+  color: var(--r2-theme-color);
+  border-color: var(--r2-theme-color);
+}
+.btn-outline-theme-2:hover {
+  color: var(--r2-text--buttons-color);
+  background-color: var(--r2-theme-color);
+  border-color: var(--r2-theme-color);
+}
+.btn-check:focus + .btn-outline-theme-2, .btn-outline-theme-2:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--r2-theme-color-rgb), 0.5);
+}
+.btn-check:checked + .btn-outline-theme-2, .btn-check:active + .btn-outline-theme-2, .btn-outline-theme-2:active, .btn-outline-theme-2.active, .btn-outline-theme-2.dropdown-toggle.show {
+  color: var(--r2-text--buttons-color);
+  background-color: var(--r2-theme-color);
+  border-color: var(--r2-theme-color);
+}
+.btn-check:checked + .btn-outline-theme-2:focus, .btn-check:active + .btn-outline-theme-2:focus, .btn-outline-theme-2:active:focus, .btn-outline-theme-2.active:focus, .btn-outline-theme-2.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--r2-theme-color-rgb), 0.5);
+}
+.btn-outline-theme-2:disabled, .btn-outline-theme-2.disabled {
+  color: var(--r2-theme-color);
+  background-color: transparent;
+}
+.btn-theme-3 {
+  color: var(--r3-text--buttons-color);
+  background-color: var(--r3-theme-color);
+  border-color: var(--r3-theme-color);
+}
+.btn-theme-3:hover {
+  color: var(--r3-text--buttons-color);
+  background-color: var(--r3-theme-color-tint);
+  border-color: var(--r3-theme-color-shade);
+}
+.btn-check:focus + .btn-theme-3, .btn-theme-3:focus {
+  color: var(--r3-text--buttons-color);
+  background-color: var(--r3-theme-color-tint);
+  border-color: var(--r3-theme-color-shade);
+  box-shadow: 0 0 0 0.25rem rgba(var(--r3-theme-color-rgb), 0.5);
+}
+.btn-check:checked + .btn-theme-3, .btn-check:active + .btn-theme-3, .btn-theme-3:active, .btn-theme-3.active, .show > .btn-theme-3.dropdown-toggle {
+  color: var(--r3-text--buttons-color);
+  background-color: var(--r3-theme-color-shade);
+  border-color: var(--r3-theme-color-shade);
+}
+.btn-check:checked + .btn-theme-3:focus, .btn-check:active + .btn-theme-3:focus, .btn-theme-3:active:focus, .btn-theme-3.active:focus, .show > .btn-theme-3.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--r3-theme-color-rgb), 0.5);
+}
+.btn-theme-3:disabled, .btn-theme-3.disabled {
+  color: var(--r3-text--buttons-color);
+  background-color: var(--r3-theme-color);
+  border-color: var(--r3-theme-color);
+}
+.btn-outline-theme-3 {
+  color: var(--r3-theme-color);
+  border-color: var(--r3-theme-color);
+}
+.btn-outline-theme-3:hover {
+  color: var(--r3-text--buttons-color);
+  background-color: var(--r3-theme-color);
+  border-color: var(--r3-theme-color);
+}
+.btn-check:focus + .btn-outline-theme-3, .btn-outline-theme-3:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--r3-theme-color-rgb), 0.5);
+}
+.btn-check:checked + .btn-outline-theme-3, .btn-check:active + .btn-outline-theme-3, .btn-outline-theme-3:active, .btn-outline-theme-3.active, .btn-outline-theme-3.dropdown-toggle.show {
+  color: var(--r3-text--buttons-color);
+  background-color: var(--r3-theme-color);
+  border-color: var(--r3-theme-color);
+}
+.btn-check:checked + .btn-outline-theme-3:focus, .btn-check:active + .btn-outline-theme-3:focus, .btn-outline-theme-3:active:focus, .btn-outline-theme-3.active:focus, .btn-outline-theme-3.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--r3-theme-color-rgb), 0.5);
+}
+.btn-outline-theme-3:disabled, .btn-outline-theme-3.disabled {
+  color: var(--r3-theme-color);
+  background-color: transparent;
+}
+.form-control:focus {
+	box-shadow: 0 0 0 0.25rem rgba(var(--r1-theme-color-rgb), 0.25);
+}
+
+.form-select:focus {
+	box-shadow: 0 0 0 0.25rem rgba(var(--r1-theme-color-rgb), 0.25);
+}
