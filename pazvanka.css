@@ -225,3 +225,23 @@ hr.line-lg {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
 }
+.border-bottom-thema1{
+	border-bottom-width: 8px;
+    	border-bottom-style: double;
+    	border-bottom-color: var(--r1-theme-color);
+}
+.border-bottom-thema2{
+	border-bottom-width: 8px;
+    	border-bottom-style: double;
+    	border-bottom-color: var(--r2-theme-color);
+}
+.border-top-thema1{
+	border-top-width: 8px;
+    	border-top-style: double;
+    	border-top-color: var(--r1-theme-color);
+}
+.border-bottom-thema2{
+	border-top-width: 8px;
+    	border-top-style: double;
+    	border-top-color: var(--r2-theme-color);
+}
